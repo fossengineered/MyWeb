@@ -1,38 +1,221 @@
 /* Reset some default styles */
-body, h1, h2, p {
+body,
+h1,
+h2,
+p {
     margin: 0;
     padding: 0;
-  }
-  
-  /* Hero section styles */
-  .hero {
+}
+
+/* Top bar styles */
+.top-bar {
+    background-color: #333;
+    padding: 10px;
+}
+
+.top-bar nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-bar nav ul li {
+    margin-left: 10px;
+}
+
+.top-bar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Avatar icon styles */
+.top-bar nav ul li ion-icon {
+    color: #fff;
+    font-size: 50px;
+}
+
+/* Hero section styles */
+.hero {
     background-color: #f2f2f2;
     text-align: center;
     padding: 100px;
-  }
-  
-  .hero h1 {
+}
+
+.hero h1 {
     font-size: 32px;
-  }
-  
-  /* Info section styles */
-  .info {
+}
+
+/* Info section styles */
+.info {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     padding: 50px;
-  }
-  
-  .column {
-    width: 30%;
-    margin: 10px;
+}
+
+.column {
+    flex-basis: 30%;
     padding: 20px;
     background-color: #f2f2f2;
     text-align: center;
-  }
-  
-  .column h2 {
+}
+
+.column h2 {
     font-size: 24px;
     margin-bottom: 10px;
+}
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 600px) {
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        flex-basis: 80%;
+    }
+}
+
+/* Top bar styles */
+.top-bar {
+    background-color: #333;
+    padding: 10px;
+}
+
+.top-bar nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.top-bar nav ul li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.top-bar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Avatar icon styles */
+.top-bar .right-section ion-icon {
+    color: #fff;
+    font-size: 25px;
+}
+
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 600px) {
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        flex-basis: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Media query for screens up to 1450px */
+@media only screen and (max-width: 1450px) {
+    .info {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    
+    .column {
+      padding: 5px;
+    }
   }
   
+  /* Media query for mobile screens */
+  @media only screen and (max-width: 600px) {
+    .info {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .column {
+      flex-basis: 80%;
+      margin-bottom: 20px;
+    }
+  }
+
+  /* Define the color variables */
+:root {
+    --base-color: #A1D3E4;
+    --lighten-20: #C5E8F3;
+    --lighten-40: #E9F3F8;
+    --darken-20: #82BFD4;
+    --darken-40: #4E9BB3;
+  }
+  
+  /* Use the colors in your styles */
+  body {
+    background-color: var(--base-color);
+    color: var(--darken-40);
+  }
+  
+  h1 {
+    color: var(--darken-20);
+  }
+  
+  p {
+    color: var(--darken-40);
+  }
+  
+  a {
+    color: var(--lighten-40);
+  }
+  
+  button {
+    background-color: var(--lighten-20);
+    color: var(--base-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+  }
+  
+  /* Additional styles and selectors */
+  /* ... */
+
+  
+  /* Add rounded corners to the info section */
+.info {
+    border-radius: 10px;
+  }
+  
+  /* Add rounded corners to the columns */
+  .column {
+    border-radius: 10px;
+  }
+
+  body {
+    background-color: #ffffff;
+  }
+  
+  body.landing-page {
+    background-color: #A1D3E4;
+  }
+
+
+  .avatar ion-icon {
+    color: #ffffff;
+    font-size: 25px;
+  }
+
+  .about-content p {
+    margin-bottom: 20px;
+  }
+
+  .about-page{
+    margin: 20px;
+    color: #555;
+  }

@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Simple Website</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
 </head>
-<body>
+
+<body class="landing-page">
+  <header class="top-bar">
+    <nav>
+      <div class="left-section">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="right-section">
+        <ul>
+          <li><ion-icon name="person-circle-outline"></ion-icon></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
   <header class="hero">
     <h1>Welcome to My Website</h1>
   </header>
-
   <section class="info">
     <div class="column">
       <h2>Column 1</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor faucibus dui, sit amet porta magna consectetur eget.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor faucibus dui, sit amet porta magna
+        consectetur eget.</p>
     </div>
     <div class="column">
       <h2>Column 2</h2>
@@ -24,4 +43,5 @@
     </div>
   </section>
 </body>
+
 </html>
